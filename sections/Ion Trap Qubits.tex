@@ -1,0 +1,29 @@
+\subsubsection{Trapped-Ion Qubits}
+Trapped-Ion qubits offer a significant number of advantages over other types of qubits, and are thus considered a very promising approach to achieving FTQC \cite{schafer2018fast}, \cite{bruzewicz2019trapped}. To begin with, one of their main assets is their long coherence time. For example, a coherence time of approximately 5500 s (more than 90 min) has been observed for the $^{171}Yb^{+}$ ion qubit \cite{wang2021single}. Moreover, an even bigger advantage of trapped-ion qubits is the fact that they maintain a long coherence time even at room temperature. To detail, a coherence time of 39 min has been achieved at room temperature using ionized donors in $^{28}Si$ \cite{saeedi2013room}. Lastly, trapped-ion qubits allow for high gate fidelities - $99.993-99.999\%$ for single-qubit gates, and $99.3-99.9\%$ for two-qubit gates \cite{bruzewicz2019trapped}. \par
+
+On the other hand, trapped-ion qubits suffer from a number of downsides. Possibly the most relevant disadvantage of using this type of qubits is their gate speed. As it can be observed in Table \ref{tab:qubit_comparison}, the gate speed of trapped-ion qubit systems is several orders of magnitude lower than that of other qubit systems. More precisely, for other types of qubits, it is in the $ns$ range, while it is in the $\mu$s range for trapped-ion qubits \cite{bruzewicz2019trapped}. Additionally, this qubit type suffers from slow advances in scalability, mainly due to difficulties in controlling the individual ions \cite{bruzewicz2019trapped}.  \par
+
+Both the upsides and downsides of trapped-ion qubits reflect in their implementation of QEC. To begin with, the high gate fidelity of trapped-ion qubits allows for the implementation of surface codes \cite{bruzewicz2019trapped}, which are a popular QEC method that manages to correct both bit flips and phase flips \cite{fowler2012surface}. However, their low gate speed (see Table \ref{tab:qubit_comparison}) might make the use of surface codes in larger trapped-ion networks less feasible. As such, other QEC methods have been experimented with since. For instance, dissipation could be used to stabilize qubits \cite{reiter2017dissipative}. Alternatively, shuttling-based or hiding-based QEC schemes could be used \cite{bermudez2017assessing}. \par
+
+
+
+% paragraph 3 = qec
+% - sufficient gate fidelities -> surface codes work \cite{bruzewicz2019trapped} \cite{fowler2012surface}
+% - slow speed - maybe might slow surface codes down - reference table
+% - some other codes besides surface codes have been used: dissipative \cite{reiter2017dissipative}, shuttling, hiding \cite{bermudez2017assessing}
+
+
+
+
+
+% paragraph 1 = upsides: 100-150 words
+% - coherence time \cite{wang2021single} - 5500s 171-Yb+
+% - room temperature \cite{saeedi2013room} - 39 min at room temp
+% - gate fidelities - \cite{bruzewicz2019trapped} - table
+
+% paragraph 2 = downsides: 100-150 words
+% - slow gate speed
+% - qec not being that happy with it?? - ask jan about it
+
+% paragraph 3 = interaction with fpga
+% - tbd after fpga research
