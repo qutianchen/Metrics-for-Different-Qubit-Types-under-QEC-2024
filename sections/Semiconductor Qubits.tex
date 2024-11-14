@@ -1,0 +1,15 @@
+\subsubsection{Semiconductor Spin Qubits}
+
+Spin qubits based in a semiconducting medium are, in the long run, among the most promising types of qubits. This is in part due to their inherent compatibility with existing semiconductor manufacturing methods \cite{Zwerver_2022}. Aside from that, spin qubits have been shown to reach a fidelity over the surface code threshold, setting them up as a potential candidate for FTQC \cite{Xue_2022}.
+
+The current state-of-the-art in semiconductor spin qubits promises several advantages over other qubit types. In addition to the previously mentioned fabrication methods, spin qubits are inherently small in size (100 nm), which is an important advantage in scaling of the quantum systems \cite{Neyens_2024}.
+Other advantages of this qubit type include the existence of three-qubit (toffoli) gates \cite{Stano_2022} and the possibility to use spin qubits in hot environments, up to 10 K \cite{Ono_2019}.
+Importantly for QEC, spin qubits have fast one- and two-qubit gate operations with high fidelity.
+
+The biggest system as of yet can contain and address 16 physical qubits \cite{Borsoi_2023}, however there are still obstacles in the way of scaling semiconducting spin qubits to larger fault-tolerant systems. The most important of these scaling issues has to do with the measurement of qubits. For QEC, it is important that multiple qubits can quickly be measured and initialized. It is impossible to measure every individual qubit simultaneously for spin qubits in larger systems, such as the one by Borsoi et al \cite{Borsoi_2023}. This results in an additional time delay to move a qubit to a sensor.
+
+Furthermore, it is important to discuss several experimental values found in Table \ref{tab:qubit_comparison}.
+The T\textsubscript{2}\textsuperscript{CPMG} time has been shown reach periods up to 0.56 seconds in an experiment by Muhonen et al \cite{Muhonen_2014}. In this experiment, a P-donor is used to achieve these long coherence times which is better suited for quantum memory than quantum computing. For this reason, this result was omitted from the table, instead opting for the 28 ms timescale.
+It is also important to note that in the setup for the experiment of the 2-qubit gate fidelity by Mills et al \cite{Mills_2022}, a two qubit chip was used. The implication of this setup is that it is not known what the effects of cross-talk would be if this method was scaled up.
+
+Future developments aim to overcome, or work around, some of the previously mentioned obstacles. Progress in hardware and manufacturing methods will result in an increase of the fidelity of operations and coherence times \cite{Stano_2022}. Furthermore, techniques involving qubit shuttling (\cite{Knne_2024}) increase the connectivity of these systems to allow for new QEC implementations.
